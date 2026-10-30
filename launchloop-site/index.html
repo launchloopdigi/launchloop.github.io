@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>window.__resources = {"https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "assets/aa77ae4c49f5.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/feb8ddc9d056.js"};</script>
+<meta charset="utf-8">
+<title>LaunchLoop Home</title>
+<script src="assets/a40c333009ea.js"></script>
+<meta name="hz:slide-selector" content="[data-canvas-width]"><meta name="hz:canvas-width" content="1440"><meta name="hz:canvas-height" content="4700"></head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f11d729bb0a4.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f11d729bb0a4.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f11d729bb0a4.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/c0781ea2f290.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/c0781ea2f290.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/c0781ea2f290.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #2A6BFF;outline-offset:3px;border-radius:8px}
+.dark a:focus-visible,.dark button:focus-visible,.navbar a:focus-visible,.navbar button:focus-visible{outline-color:#FFB020}
+
+.navbar{background:rgba(0,5,11,.82);backdrop-filter:blur(16px);transition:background .3s ease,box-shadow .3s ease}
+.navbar.scrolled{background:rgba(0,5,11,.97);box-shadow:0 18px 40px -18px rgba(0,5,11,.65)}
+.nlink{position:relative;color:#C9D3EA;transition:color .2s ease}
+.nlink::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:3px;border-radius:3px;background:linear-gradient(90deg,#14C4FF,#2A6BFF,#FF6B1F);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nlink:hover{color:#FFFFFF}
+.nlink:hover::after,.nlink.on::after{transform:scaleX(1)}
+.nlink.on{color:#FFFFFF}
+.menu-btn{display:none}
+.mpanel{animation:panelIn .35s cubic-bezier(.2,.7,.2,1) both;transform-origin:top}
+.mlink{animation:mIn .5s cubic-bezier(.2,.7,.2,1) both}
+
+.btn-primary{position:relative;overflow:hidden;transition:box-shadow .25s ease}
+.btn-primary:hover{box-shadow:0 16px 30px -14px rgba(255,107,31,.8)}
+.btn-primary .arrow{transition:transform .25s ease}
+.btn-primary:hover .arrow{transform:translateX(5px)}
+.btn-primary::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s ease}
+.btn-primary:hover::after{left:130%}
+.btn-ghost{transition:border-color .2s ease,background .2s ease}
+.btn-ghost:hover{border-color:#2A6BFF;background:#F2F7FF}
+.foot-link{transition:color .2s ease}
+.foot-link:hover{color:#FFFFFF}
+.tile{transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.tile:hover{transform:translateY(-3px);border-color:#FF8A2B;background:#FFF8F2}
+.row{position:relative;transition:padding .35s cubic-bezier(.2,.7,.2,1),background .3s ease}
+.row .go{transition:transform .35s cubic-bezier(.2,.7,.2,1),background .3s ease,color .3s ease}
+.row:hover{padding-left:24px;padding-right:24px;background:#F2F7FF}
+.row:hover .go{transform:rotate(-45deg);background:#FF6B1F;color:#00050B}
+
+.word{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.06em;margin-right:.2em}
+.word>span{display:inline-block;transform:translateY(112%);animation:wordUp .9s cubic-bezier(.2,.7,.2,1) forwards}
+.grad-text{background:linear-gradient(90deg,#14C4FF,#2A6BFF 45%,#FF6B1F 80%,#FFB020);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.grad-deep{background:linear-gradient(90deg,#1E56E8,#E8590C);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.floaty{animation:floaty 6s ease-in-out infinite}
+.spin{animation:spin 9s linear infinite}
+.spin-slow{animation:spinS 18s linear infinite}
+.track{animation:marquee 32s linear infinite}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+.vid-reveal{animation:vidIn 1.3s cubic-bezier(.77,0,.18,1) .5s both}
+.par{transform:translate(calc(var(--mx,0) * 26px),calc(var(--my,0) * 26px));transition:transform .5s ease-out}
+.curtain{position:fixed;inset:0;z-index:200;pointer-events:none;background:#00050B;display:flex;align-items:center;justify-content:center;animation:curtain 1.1s cubic-bezier(.77,0,.18,1) .45s forwards}
+.curtain2{position:fixed;inset:0;z-index:199;pointer-events:none;background:linear-gradient(135deg,#FF6B1F,#FFB020);animation:curtain 1.1s cubic-bezier(.77,0,.18,1) .6s forwards}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:150;pointer-events:none;background:linear-gradient(90deg,#14C4FF,#2A6BFF,#FF6B1F);transform-origin:left;transform:scaleX(0)}
+
+.robot-wrap{position:fixed;right:16px;bottom:16px;z-index:25;pointer-events:none;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.robot-svg{width:132px;height:auto;display:block;overflow:visible}
+.bob{animation:bob 4s ease-in-out infinite}
+.bubble{position:absolute;right:100%;top:8px;margin-right:6px;width:max-content;max-width:190px;background:#FFFFFF;border:1px solid #D5DEEF;border-radius:14px;padding:9px 13px;font-size:13px;font-weight:600;line-height:1.35;color:#00050B;box-shadow:0 14px 30px -16px rgba(0,5,11,.5)}
+.robot .arm-l{transform-origin:50px 104px;transition:transform .7s cubic-bezier(.3,1.4,.5,1)}
+.robot .arm-r{transform-origin:110px 104px;transition:transform .7s cubic-bezier(.3,1.4,.5,1)}
+.robot .head{transform-origin:80px 90px;transition:transform .7s ease}
+.robot .leg-l{transform-origin:66px 152px}
+.robot .leg-r{transform-origin:94px 152px}
+.robot .eye{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+.robot .tip{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.pose-point .arm-l{transform:rotate(100deg)}
+.pose-pointdown .arm-l{transform:rotate(58deg)}
+.pose-wave .arm-r{animation:wave .8s ease-in-out infinite alternate}
+.pose-think .arm-r{transform:rotate(-148deg)}
+.pose-think .head{transform:rotate(-7deg)}
+.walking.pose-walk .leg-l{animation:stepL .45s ease-in-out infinite alternate}
+.walking.pose-walk .leg-r{animation:stepR .45s ease-in-out infinite alternate}
+.walking.pose-walk .arm-l{animation:stepR .45s ease-in-out infinite alternate}
+.walking.pose-walk .arm-r{animation:stepL .45s ease-in-out infinite alternate}
+
+@keyframes wordUp{
+to{transform:translateY(0)}
+}
+@keyframes rise{
+from{opacity:0;transform:translateY(24px)}
+to{opacity:1;transform:translateY(0)}
+}
+@keyframes floaty{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+}
+@keyframes bob{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-7px)}
+}
+@keyframes spin{
+from{transform:translate(-50%,-50%) rotate(0deg)}
+to{transform:translate(-50%,-50%) rotate(360deg)}
+}
+@keyframes spinS{
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+@keyframes marquee{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+@keyframes pulse{
+0%,100%{opacity:1;transform:scale(1)}
+50%{opacity:.55;transform:scale(1.45)}
+}
+@keyframes vidIn{
+from{clip-path:inset(100% 0 0 0 round 28px)}
+to{clip-path:inset(0 0 0 0 round 28px)}
+}
+@keyframes curtain{
+from{transform:translateY(0)}
+to{transform:translateY(-102%)}
+}
+@keyframes panelIn{
+from{opacity:0;transform:scaleY(.92) translateY(-8px)}
+to{opacity:1;transform:scaleY(1) translateY(0)}
+}
+@keyframes mIn{
+from{opacity:0;transform:translateX(-16px)}
+to{opacity:1;transform:translateX(0)}
+}
+@keyframes blink{
+0%,92%,100%{transform:scaleY(1)}
+95%{transform:scaleY(.1)}
+}
+@keyframes wave{
+from{transform:rotate(-135deg)}
+to{transform:rotate(-178deg)}
+}
+@keyframes stepL{
+from{transform:rotate(-16deg)}
+to{transform:rotate(16deg)}
+}
+@keyframes stepR{
+from{transform:rotate(16deg)}
+to{transform:rotate(-16deg)}
+}
+@keyframes reveal{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+@keyframes grow{
+from{transform:scaleX(0)}
+to{transform:scaleX(1)}
+}
+@keyframes progress{
+to{transform:scaleX(1)}
+}
+@supports (animation-timeline: view()){
+.reveal{animation:reveal linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+.grow{transform-origin:left;animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 35%}
+.progress{animation:progress linear both;animation-timeline:scroll(root)}
+}
+
+@media (max-width: 980px){
+.nav-links{display:none !important}
+.menu-btn{display:inline-flex}
+}
+@media (max-width: 560px){
+.nav-cta{display:none !important}
+.wm{display:none !important}
+.robot-svg{width:84px}
+.bubble{display:none}
+.robot-wrap{right:8px;bottom:8px}
+}
+@media (prefers-reduced-motion: reduce){
+.rise,.floaty,.spin,.spin-slow,.track,.pulse,.bob,.reveal,.grow,.vid-reveal,.progress,.mpanel,.mlink,.robot .eye,.robot .tip{animation:none !important}
+.word>span{animation:none;transform:none}
+.curtain,.curtain2{display:none}
+.btn-primary,.btn-primary .arrow,.tile,.row,.row .go,.par,.robot-wrap,.robot .arm-l,.robot .arm-r,.robot .head{transition:none}
+.btn-primary::after{display:none}
+.row:hover .go,.tile:hover{transform:none}
+}
+</style>
+</helmet>
+
+<div id="top" style="font-family:'Inter',system-ui,sans-serif;color:#111111;background:#FFFFFF;-webkit-font-smoothing:antialiased;overflow-x:clip" data-canvas-width="1440" data-canvas-height="4700" data-document-role="page" data-label="Home">
+
+<!-- Page transition + scroll progress -->
+<div class="curtain" aria-hidden="true">
+<img src="assets/e6aa58b0e725.png" alt="" width="120" height="83" style="width:120px;height:auto;animation:rise .6s ease both">
+</div>
+<div class="curtain2" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:60;padding:14px 16px 0;pointer-events:none">
+<div class="navbar {{navClass}}" style="pointer-events:auto;max-width:1240px;margin:0 auto;border-radius:20px;min-height:66px;box-sizing:border-box;padding:0 10px 0 18px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<a href="index.html" aria-label="LaunchLoop Digital, home" style="display:flex;align-items:center;gap:12px;min-width:0">
+<img src="assets/e6aa58b0e725.png" alt="LaunchLoop logo" width="58" height="40" style="width:58px;height:40px;object-fit:contain;display:block;flex:none">
+<span class="wm" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:15px;letter-spacing:0.22em;color:#FFFFFF">LAUNCH<span style="color:#FF8A2B">LOOP</span></span>
+</a>
+<nav class="nav-links" aria-label="Primary" style="display:flex;align-items:center;gap:34px;font-size:15px;font-weight:500">
+<a class="nlink on" href="index.html" aria-current="page">Home</a>
+<a class="nlink" href="services.html">Services</a>
+<a class="nlink" href="about-us.html">About Us</a>
+<a class="nlink" href="our-process.html">Our Process</a>
+<a class="nlink" href="contact.html">Contact</a>
+</nav>
+<div style="display:flex;align-items:center;gap:10px">
+<a class="nav-cta btn-primary" href="contact.html" style="background:linear-gradient(135deg,#FF6B1F,#FFB020);color:#00050B;font-size:15px;font-weight:600;padding:0 22px;min-height:46px;border-radius:12px;display:inline-flex;align-items:center">Let's Talk</a>
+<button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="{{menuOpen}}" aria-controls="mobile-menu" sc-camel-on-click="{{toggleMenu}}" style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,0.22);background:transparent;color:#FFFFFF;align-items:center;justify-content:center;cursor:pointer;padding:0">
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6 6 18"></path></svg>
+</sc-if>
+<sc-if value="{{menuClosed}}" hint-placeholder-val="{{ true }}">
+<svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+</sc-if>
+</button>
+</div>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<nav id="mobile-menu" class="mpanel" aria-label="Mobile" style="pointer-events:auto;max-width:1240px;margin:8px auto 0;background:#00050B;border-radius:20px;padding:8px 22px 24px;display:flex;flex-direction:column;box-shadow:0 24px 48px -20px rgba(0,5,11,.7)">
+<a class="mlink" href="index.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.05s;min-height:56px;display:flex;align-items:center;font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;font-weight:600;color:#FF8A2B;border-bottom:1px solid rgba(255,255,255,.12)">Home</a>
+<a class="mlink" href="services.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.1s;min-height:56px;display:flex;align-items:center;font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;font-weight:600;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.12)">Services</a>
+<a class="mlink" href="about-us.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.15s;min-height:56px;display:flex;align-items:center;font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;font-weight:600;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.12)">About Us</a>
+<a class="mlink" href="our-process.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.2s;min-height:56px;display:flex;align-items:center;font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;font-weight:600;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.12)">Our Process</a>
+<a class="mlink" href="contact.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.25s;min-height:56px;display:flex;align-items:center;font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;font-weight:600;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.12)">Contact</a>
+<a class="mlink btn-primary" href="contact.html" sc-camel-on-click="{{closeMenu}}" style="animation-delay:.3s;margin-top:22px;background:linear-gradient(135deg,#FF6B1F,#FFB020);color:#00050B;font-size:17px;font-weight:600;min-height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center">Let's Talk</a>
+</nav>
+</sc-if>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="sec-hero" sc-camel-on-mouse-move="{{heroMove}}" sc-camel-on-mouse-leave="{{heroLeave}}" style="position:relative;background:#FFFFFF;overflow:hidden">
+<div class="par" style="position:absolute;top:60px;left:-120px;width:360px;height:360px;border-radius:50%;border:2px solid #14C4FF;opacity:.5;pointer-events:none"></div>
+<div class="par" style="position:absolute;bottom:40px;left:44%;width:20px;height:20px;border-radius:50%;background:#FF6B1F;pointer-events:none;--mx:0"></div>
+<div style="position:relative;max-width:1240px;margin:0 auto;padding:48px 24px 96px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:56px 48px">
+
+<div style="flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<p class="rise" style="margin:0;display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#1650D8;animation-delay:.9s">
+<span class="pulse" style="width:8px;height:8px;border-radius:50%;background:#FF6B1F;display:inline-block"></span>
+Creative thinking. Digital growth.</p>
+<h1 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(34px,4.7vw,68px);line-height:1.02;letter-spacing:-0.035em;text-transform:uppercase;color:#111111">
+<span class="word"><span style="animation-delay:1.0s">We</span></span><span class="word"><span style="animation-delay:1.07s">know</span></span><span class="word"><span style="animation-delay:1.14s">what</span></span><span class="word"><span style="animation-delay:1.21s">it</span></span><span class="word"><span style="animation-delay:1.28s">takes</span></span><span class="word"><span style="animation-delay:1.35s">to</span></span><span class="word"><span style="animation-delay:1.42s">make</span></span><span class="word"><span style="animation-delay:1.49s">your</span></span><span class="word"><span style="animation-delay:1.56s">brand</span></span><span class="word"><span style="animation-delay:1.63s" class="grad-deep">stand</span></span><span class="word"><span style="animation-delay:1.7s" class="grad-deep">out.</span></span>
+</h1>
+<p class="rise" style="margin:0;max-width:520px;font-size:19px;line-height:1.6;color:#5B6475;text-wrap:pretty;animation-delay:1.8s">We combine creativity, strategy, and digital innovation to help ambitious brands build visibility, connect with audiences, and grow.</p>
+<div class="rise" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:4px;animation-delay:1.9s">
+<a class="btn-primary" sc-camel-on-mouse-move="{{magnet}}" sc-camel-on-mouse-leave="{{magnetOut}}" href="services.html" style="background:linear-gradient(135deg,#FF6B1F,#FFB020);color:#00050B;font-size:16px;font-weight:600;padding:0 28px;min-height:58px;border-radius:14px;display:inline-flex;align-items:center;gap:10px;transition:transform .25s ease,box-shadow .25s ease">Explore Our Services
+<svg class="arrow" width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+<a class="btn-ghost" sc-camel-on-mouse-move="{{magnet}}" sc-camel-on-mouse-leave="{{magnetOut}}" href="contact.html" style="background:#FFFFFF;color:#111111;border:1.5px solid #00050B;font-size:16px;font-weight:600;padding:0 28px;min-height:58px;box-sizing:border-box;border-radius:14px;display:inline-flex;align-items:center;transition:transform .25s ease,border-color .2s ease,background .2s ease">Let's Talk</a>
+</div>
+<p class="rise" style="margin:12px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:15px;letter-spacing:0.22em;color:#111111;animation-delay:2s">
+<span>LAUNCH.</span><span style="color:#2A6BFF">GROW.</span><span style="color:#E8590C">REPEAT.</span></p>
+</div>
+
+<!-- Video -->
+<div style="flex:1 1 360px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:100%;max-width:400px;aspect-ratio:9 / 16">
+<div class="par" style="position:absolute;top:-4%;right:-14%;width:46%;aspect-ratio:1 / 1;border-radius:50%;background:linear-gradient(135deg,#FF6B1F,#FFB020)"></div>
+<div class="par" style="position:absolute;bottom:12%;left:-12%;width:36%;aspect-ratio:1 / 1;border-radius:50%;border:3px solid #2A6BFF"></div>
+<div class="vid-reveal" style="position:absolute;inset:0;border-radius:28px;overflow:hidden;box-shadow:0 40px 70px -34px rgba(0,5,11,.65)">
+<div class="spin" style="position:absolute;left:50%;top:50%;width:230%;aspect-ratio:1 / 1;background:conic-gradient(#14C4FF,#2A6BFF,#FF6B1F,#FFB020,#14C4FF)"></div>
+<div data-reel="1" style="position:absolute;inset:4px;border-radius:24px;overflow:hidden;background:#00050B">
+<video src="assets/c334a74723e0.mp4" poster="assets/4a3af1782070.jpg" autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="auto" aria-label="LaunchLoop promotional video" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video>
+<div style="position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(0deg,rgba(0,5,11,.82),rgba(0,5,11,0));pointer-events:none"></div>
+<span style="position:absolute;top:14px;left:14px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#FFFFFF;background:rgba(0,5,11,0.6);backdrop-filter:blur(6px);padding:6px 11px;border-radius:999px">LaunchLoop Reel</span>
+<button type="button" aria-label="Pause or play video" sc-camel-on-click="{{togglePlay}}" style="position:absolute;left:8px;bottom:8px;width:48px;height:48px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0">
+<span style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.18);backdrop-filter:blur(8px);color:#FFFFFF;display:flex;align-items:center;justify-content:center">
+<sc-if value="{{paused}}" hint-placeholder-val="{{ false }}">
+<svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"></polygon></svg>
+</sc-if>
+<sc-if value="{{playing}}" hint-placeholder-val="{{ true }}">
+<svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"></rect><rect x="14" y="4" width="4" height="16" rx="1"></rect></svg>
+</sc-if>
+</span>
+</button>
+<button type="button" aria-label="Turn video sound on or off" sc-camel-on-click="{{toggleSound}}" style="position:absolute;right:8px;bottom:8px;width:48px;height:48px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0">
+<span style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.18);backdrop-filter:blur(8px);color:#FFFFFF;display:flex;align-items:center;justify-content:center">
+<sc-if value="{{muted}}" hint-placeholder-val="{{ true }}">
+<svg width="17" height="17" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="m22 9-6 6"></path><path d="m16 9 6 6"></path></svg>
+</sc-if>
+<sc-if value="{{soundOn}}" hint-placeholder-val="{{ false }}">
+<svg width="17" height="17" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+</sc-if>
+</span>
+</button>
+</div>
+</div>
+<div class="rise floaty" style="position:absolute;left:-9%;top:6%;width:112px;height:112px;border-radius:50%;background:#FFFFFF;box-shadow:0 18px 36px -18px rgba(0,5,11,.45);animation-delay:2.2s,0s">
+<svg class="spin-slow" sc-camel-view-box="0 0 120 120" width="112" height="112" aria-hidden="true" style="position:absolute;inset:0">
+<defs><path id="badgeCirc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"></path></defs>
+<text font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700" letter-spacing="2.4" fill="#00050B"><textPath href="#badgeCirc">LAUNCH · GROW · REPEAT · </textPath></text>
+</svg>
+<span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#FF6B1F">
+<svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+</span>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MARQUEE -->
+<section aria-label="Capabilities" class="dark" style="background:#00050B;overflow:hidden">
+<div style="padding:30px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+<div class="track" style="display:flex;width:max-content;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(22px,3vw,38px);letter-spacing:0.1em;color:#FFFFFF">
+<div style="display:flex;align-items:center;gap:44px;padding-right:44px;flex:none">
+<span>STRATEGY</span><span aria-hidden="true" style="color:#14C4FF">/</span>
+<span>DESIGN</span><span aria-hidden="true" style="color:#FF6B1F">/</span>
+<span>CONTENT</span><span aria-hidden="true" style="color:#14C4FF">/</span>
+<span>PERFORMANCE</span><span aria-hidden="true" style="color:#FFB020">/</span>
+</div>
+<div aria-hidden="true" style="display:flex;align-items:center;gap:44px;padding-right:44px;flex:none">
+<span>STRATEGY</span><span style="color:#14C4FF">/</span>
+<span>DESIGN</span><span style="color:#FF6B1F">/</span>
+<span>CONTENT</span><span style="color:#14C4FF">/</span>
+<span>PERFORMANCE</span><span style="color:#FFB020">/</span>
+</div>
+<div aria-hidden="true" style="display:flex;align-items:center;gap:44px;padding-right:44px;flex:none">
+<span>STRATEGY</span><span style="color:#14C4FF">/</span>
+<span>DESIGN</span><span style="color:#FF6B1F">/</span>
+<span>CONTENT</span><span style="color:#14C4FF">/</span>
+<span>PERFORMANCE</span><span style="color:#FFB020">/</span>
+</div>
+<div aria-hidden="true" style="display:flex;align-items:center;gap:44px;padding-right:44px;flex:none">
+<span>STRATEGY</span><span style="color:#14C4FF">/</span>
+<span>DESIGN</span><span style="color:#FF6B1F">/</span>
+<span>CONTENT</span><span style="color:#14C4FF">/</span>
+<span>PERFORMANCE</span><span style="color:#FFB020">/</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VALUE -->
+<section id="sec-about" style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:120px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:56px 96px">
+<div class="reveal" style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:24px;align-self:flex-start">
+<p style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#1650D8">Why LaunchLoop</p>
+<h2 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,56px);line-height:1.03;letter-spacing:-0.035em;text-transform:uppercase;text-wrap:balance">More than marketing. A <span class="grad-deep">growth partner.</span></h2>
+<p style="margin:0;font-size:18px;line-height:1.65;color:#5B6475;text-wrap:pretty">We bring strategy, creative execution, and digital marketing together under one roof, so every campaign has a clear purpose.</p>
+<a href="about-us.html" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;font-weight:600;font-size:16px;color:#1650D8">About LaunchLoop
+<svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<div style="flex:1.3 1 420px;min-width:0;display:flex;flex-direction:column">
+<div class="reveal" style="display:flex;gap:28px;padding:34px 0;border-top:1.5px solid #00050B">
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:44px;line-height:1;flex:none;width:72px">01</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:26px;letter-spacing:-0.02em">Strategy First</h3>
+<p style="margin:0;font-size:17px;line-height:1.6;color:#5B6475;max-width:520px">Clear objectives, audience understanding, and a practical plan before execution.</p>
+</div>
+</div>
+<div class="reveal" style="display:flex;gap:28px;padding:34px 0;border-top:1.5px solid #00050B">
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:44px;line-height:1;flex:none;width:72px">02</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:26px;letter-spacing:-0.02em">Creative That Stands Out</h3>
+<p style="margin:0;font-size:17px;line-height:1.6;color:#5B6475;max-width:520px">Distinctive visuals, engaging videos, and consistent brand communication.</p>
+</div>
+</div>
+<div class="reveal" style="display:flex;gap:28px;padding:34px 0;border-top:1.5px solid #00050B;border-bottom:1.5px solid #00050B">
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:44px;line-height:1;flex:none;width:72px">03</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:26px;letter-spacing:-0.02em">Performance With Purpose</h3>
+<p style="margin:0;font-size:17px;line-height:1.6;color:#5B6475;max-width:520px">Campaigns designed around meaningful business goals, measurable outcomes, and continuous improvement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES INDEX -->
+<section id="sec-services" style="background:#F8FAFF;border-top:1px solid #E3E9F4;border-bottom:1px solid #E3E9F4">
+<div style="max-width:1240px;margin:0 auto;padding:120px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<div class="reveal" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 48px">
+<div style="flex:1 1 480px;display:flex;flex-direction:column;gap:20px">
+<p style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#1650D8">Services</p>
+<h2 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,56px);line-height:1.03;letter-spacing:-0.035em;text-transform:uppercase;text-wrap:balance">Creative solutions. <span class="grad-deep">Real business impact.</span></h2>
+</div>
+<a class="btn-primary" href="services.html" style="background:linear-gradient(135deg,#FF6B1F,#FFB020);color:#00050B;font-size:16px;font-weight:600;padding:0 26px;min-height:54px;border-radius:14px;display:inline-flex;align-items:center;gap:10px">View all 12 services
+<svg class="arrow" width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<div class="reveal" style="display:flex;flex-direction:column;border-top:1.5px solid #00050B">
+<sc-for list="{{index}}" as="s" hint-placeholder-count="6">
+<a class="row" href="services.html" style="display:flex;align-items:center;gap:20px;padding:26px 0;min-height:44px;border-bottom:1px solid #D5DEEF">
+<span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:15px;color:#5B6475;width:36px;flex:none">{{s.num}}</span>
+<span style="flex:1;min-width:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:clamp(22px,3vw,38px);letter-spacing:-0.02em;line-height:1.1">{{s.name}}</span>
+<span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1650D8;flex:none">{{s.category}}</span>
+<span class="go" style="width:46px;height:46px;border-radius:50%;border:1.5px solid #00050B;display:flex;align-items:center;justify-content:center;flex:none">
+<svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</span>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- PROCESS TEASER -->
+<section id="sec-process" style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:120px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:60px">
+<div class="reveal" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 48px">
+<div style="flex:1 1 480px;display:flex;flex-direction:column;gap:20px">
+<p style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#1650D8">Our process</p>
+<h2 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,56px);line-height:1.03;letter-spacing:-0.035em;text-transform:uppercase;text-wrap:balance">From first idea to <span class="grad-deep">continuous growth.</span></h2>
+</div>
+<a href="our-process.html" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;font-weight:600;font-size:16px;color:#1650D8">See the full process
+<svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:36px 28px">
+<div class="reveal" style="display:flex;flex-direction:column;gap:12px">
+<div style="height:3px;background:#E3E9F4;border-radius:2px"><div class="grow" style="height:3px;border-radius:2px;background:linear-gradient(90deg,#14C4FF,#2A6BFF)"></div></div>
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;line-height:1;margin-top:10px">01</span>
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:23px;letter-spacing:-0.02em">Discover</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5B6475">Understand the brand, audience, objectives, and challenges.</p>
+</div>
+<div class="reveal" style="display:flex;flex-direction:column;gap:12px">
+<div style="height:3px;background:#E3E9F4;border-radius:2px"><div class="grow" style="height:3px;border-radius:2px;background:linear-gradient(90deg,#2A6BFF,#1E56E8)"></div></div>
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;line-height:1;margin-top:10px">02</span>
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:23px;letter-spacing:-0.02em">Strategize</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5B6475">Build a practical digital strategy and creative direction.</p>
+</div>
+<div class="reveal" style="display:flex;flex-direction:column;gap:12px">
+<div style="height:3px;background:#E3E9F4;border-radius:2px"><div class="grow" style="height:3px;border-radius:2px;background:linear-gradient(90deg,#1E56E8,#FF6B1F)"></div></div>
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;line-height:1;margin-top:10px">03</span>
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:23px;letter-spacing:-0.02em">Create</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5B6475">Develop content, campaigns, visual assets, and marketing materials.</p>
+</div>
+<div class="reveal" style="display:flex;flex-direction:column;gap:12px">
+<div style="height:3px;background:#E3E9F4;border-radius:2px"><div class="grow" style="height:3px;border-radius:2px;background:linear-gradient(90deg,#FF6B1F,#FF8A2B)"></div></div>
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;line-height:1;margin-top:10px">04</span>
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:23px;letter-spacing:-0.02em">Launch</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5B6475">Execute the marketing activities across the relevant platforms.</p>
+</div>
+<div class="reveal" style="display:flex;flex-direction:column;gap:12px">
+<div style="height:3px;background:#E3E9F4;border-radius:2px"><div class="grow" style="height:3px;border-radius:2px;background:linear-gradient(90deg,#FF8A2B,#FFB020)"></div></div>
+<span class="grad-deep" style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;line-height:1;margin-top:10px">05</span>
+<h3 style="margin:0;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:23px;letter-spacing:-0.02em">Optimize</h3>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#5B6475">Analyze performance and improve campaigns continuously.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="sec-cta" style="background:#F8FAFF;border-top:1px solid #E3E9F4">
+<div style="max-width:1240px;margin:0 auto;padding:120px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div class="reveal" style="display:flex;flex-direction:column;gap:28px;align-items:flex-start">
+<h2 style="margin:0;max-width:980px;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(36px,6.4vw,92px);line-height:1;letter-spacing:-0.04em;text-transform:uppercase;text-wrap:balance">Let's make your <span class="grad-deep">next big move.</span></h2>
+<p style="margin:0;max-width:560px;font-size:19px;line-height:1.6;color:#5B6475">Have a business to grow or a brand to build? Tell us what you have in mind.</p>
+<a class="btn-primary" href="contact.html" style="background:linear-gradient(135deg,#FF6B1F,#FFB020);color:#00050B;font-size:17px;font-weight:600;padding:0 32px;min-height:62px;border-radius:16px;display:inline-flex;align-items:center;gap:12px">Start a Conversation
+<svg class="arrow" width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:16px">
+<a class="tile" href="mailto:launchloop.digitalmarketing@gmail.com" style="display:flex;align-items:center;gap:16px;padding:20px;min-height:44px;border:1.5px solid #00050B;background:#FFFFFF;border-radius:14px;min-width:0">
+<span style="width:48px;height:48px;border-radius:12px;background:#2A6BFF;display:flex;align-items:center;justify-content:center;flex:none;color:#FFFFFF">
+<svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+</span>
+<span style="display:flex;flex-direction:column;gap:4px;min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5B6475">Email us</span>
+<span style="font-size:16px;font-weight:600;overflow-wrap:anywhere">launchloop.digitalmarketing@gmail.com</span>
+</span>
+</a>
+<a class="tile" href="https://www.instagram.com/launchloop.digital?xtok=MXExMWQ4b3V1dnAyeQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:16px;padding:20px;min-height:44px;border:1.5px solid #00050B;background:#FFFFFF;border-radius:14px;min-width:0">
+<span style="width:48px;height:48px;border-radius:12px;background:#FF6B1F;display:flex;align-items:center;justify-content:center;flex:none;color:#00050B">
+<svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</span>
+<span style="display:flex;flex-direction:column;gap:4px;min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5B6475">Instagram</span>
+<span style="font-size:16px;font-weight:600">@launchloop.digital</span>
+</span>
+</a>
+<a class="tile" href="https://wa.me/916374495395" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:16px;padding:20px;min-height:44px;border:1.5px solid #00050B;background:#FFFFFF;border-radius:14px;min-width:0">
+<span style="width:48px;height:48px;border-radius:12px;background:#00050B;display:flex;align-items:center;justify-content:center;flex:none;color:#FFFFFF">
+<svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+</span>
+<span style="display:flex;flex-direction:column;gap:4px;min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#5B6475">WhatsApp</span>
+<span style="font-size:16px;font-weight:600">+91 63744 95395</span>
+</span>
+</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="dark" style="background:#00050B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:48px 40px">
+<div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+<img src="assets/2e2d152f16f4.png" alt="LaunchLoop Digital. Launch. Grow. Repeat." width="920" height="575" style="width:100%;max-width:260px;height:auto;display:block">
+<p style="margin:0;font-size:15px;line-height:1.65;color:#C4CEE6;max-width:300px">Creative thinking, strategic marketing and digital execution, working together to help your brand move forward.</p>
+</div>
+<nav aria-label="Footer navigation" style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#C4CEE6">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#FFB020">Pages</span>
+<a class="foot-link" href="index.html">Home</a>
+<a class="foot-link" href="services.html">Services</a>
+<a class="foot-link" href="about-us.html">About Us</a>
+<a class="foot-link" href="our-process.html">Our Process</a>
+<a class="foot-link" href="contact.html">Contact</a>
+</nav>
+<nav aria-label="Footer services" style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#C4CEE6">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#FFB020">Services</span>
+<a class="foot-link" href="services.html">Content &amp; Social Media</a>
+<a class="foot-link" href="services.html">Google, Meta &amp; LinkedIn Ads</a>
+<a class="foot-link" href="services.html">SEO</a>
+<a class="foot-link" href="services.html">Video Editing &amp; Reels</a>
+<a class="foot-link" href="services.html">Design &amp; Branding</a>
+</nav>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#C4CEE6;min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#FFB020">Contact</span>
+<a class="foot-link" href="mailto:launchloop.digitalmarketing@gmail.com" style="overflow-wrap:anywhere">launchloop.digitalmarketing@gmail.com</a>
+<a class="foot-link" href="https://www.instagram.com/launchloop.digital?xtok=MXExMWQ4b3V1dnAyeQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram @launchloop.digital</a>
+<a class="foot-link" href="https://wa.me/916374495395" target="_blank" rel="noopener noreferrer">WhatsApp +91 63744 95395</a>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.14);font-size:14px;color:#C4CEE6">
+<span>© 2026 LaunchLoop Digital Marketing. All rights reserved.</span>
+<a class="foot-link" href="#top" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:500">Back to top
+<svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+
+<!-- ROBOT MASCOT -->
+<div class="robot-wrap" aria-hidden="true" style="transform:translate({{robot.x}}px,{{robot.y}}px)">
+<div style="position:relative">
+<div class="bubble">{{robot.say}}</div>
+<div class="bob">
+<svg class="robot robot-svg {{robot.cls}}" sc-camel-view-box="0 0 160 220" fill="none">
+<defs>
+<linearGradient id="rbOrange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6B1F"></stop><stop offset="1" stop-color="#FFB020"></stop></linearGradient>
+<linearGradient id="rbBlue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A6BFF"></stop><stop offset="1" stop-color="#1E56E8"></stop></linearGradient>
+<linearGradient id="rbBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#E4ECFB"></stop></linearGradient>
+</defs>
+<ellipse cx="80" cy="212" rx="34" ry="6" fill="#00050B" opacity="0.16"></ellipse>
+<g class="leg-l"><rect x="58" y="150" width="16" height="48" rx="8" fill="url(#rbBlue)"></rect><rect x="52" y="190" width="28" height="14" rx="7" fill="#00050B"></rect></g>
+<g class="leg-r"><rect x="86" y="150" width="16" height="48" rx="8" fill="url(#rbBlue)"></rect><rect x="80" y="190" width="28" height="14" rx="7" fill="#00050B"></rect></g>
+<g class="arm-l"><rect x="42" y="98" width="16" height="50" rx="8" fill="url(#rbBlue)"></rect><circle cx="50" cy="150" r="9" fill="url(#rbOrange)"></circle></g>
+<g class="arm-r"><rect x="102" y="98" width="16" height="50" rx="8" fill="url(#rbBlue)"></rect><circle cx="110" cy="150" r="9" fill="url(#rbOrange)"></circle></g>
+<rect x="50" y="92" width="60" height="66" rx="22" fill="url(#rbBody)" stroke="#C9D6F0" stroke-width="2"></rect>
+<circle cx="80" cy="126" r="14" fill="url(#rbOrange)"></circle>
+<path d="M75 120v9c0 2 1 3 3 3h4" stroke="#00050B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+<circle cx="84" cy="124" r="3.4" stroke="#00050B" stroke-width="2.2"></circle>
+<rect x="72" y="84" width="16" height="12" rx="4" fill="#1E56E8"></rect>
+<g class="head">
+<line x1="80" y1="28" x2="80" y2="14" stroke="#1E56E8" stroke-width="4" stroke-linecap="round"></line>
+<circle class="tip" cx="80" cy="10" r="6.5" fill="url(#rbOrange)"></circle>
+<circle cx="36" cy="60" r="7" fill="url(#rbBlue)"></circle>
+<circle cx="124" cy="60" r="7" fill="url(#rbBlue)"></circle>
+<rect x="38" y="28" width="84" height="62" rx="26" fill="url(#rbBody)" stroke="#C9D6F0" stroke-width="2"></rect>
+<rect x="47" y="40" width="66" height="38" rx="17" fill="#00050B"></rect>
+<rect class="eye" x="62" y="52" width="10" height="14" rx="5" fill="#14C4FF"></rect>
+<rect class="eye" x="88" y="52" width="10" height="14" rx="5" fill="#14C4FF"></rect>
+<path d="M74 71q6 4 12 0" stroke="#14C4FF" stroke-width="2.2" stroke-linecap="round"></path>
+</g>
+</svg>
+</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:4700}}">
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { menuOpen: false, scrolled: false, paused: false, muted: true, pose: 'wave', walking: false, rx: 0, ry: 0 };
+}
+componentDidMount() {
+this._raf = 0;
+this._timer = 0;
+this._onScroll = (e) => {
+if (this._raf) return;
+this._raf = requestAnimationFrame(() => { this._raf = 0; this.measure(e); });
+};
+window.addEventListener('scroll', this._onScroll, true);
+}
+componentWillUnmount() {
+window.removeEventListener('scroll', this._onScroll, true);
+clearTimeout(this._timer);
+}
+measure(e) {
+const t = e && e.target;
+const el = (t && t.scrollingElement) || (t && t.nodeType === 1 ? t : (document.scrollingElement || document.documentElement));
+const st = el.scrollTop;
+const max = Math.max(1, el.scrollHeight - el.clientHeight);
+const p = Math.min(1, Math.max(0, st / max));
+const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mid = window.innerHeight * 0.55;
+const order = [['sec-hero', 'wave'], ['sec-about', 'walk'], ['sec-services', 'point'], ['sec-process', 'think'], ['sec-cta', 'pointdown']];
+let pose = 'wave';
+for (const [id, name] of order) {
+const n = document.getElementById(id);
+if (!n) continue;
+const r = n.getBoundingClientRect();
+if (r.top <= mid && r.bottom > mid) pose = name;
+}
+const rx = reduce ? 0 : -Math.round(((Math.sin(p * Math.PI * 4) + 1) / 2) * 150);
+const ry = reduce ? 0 : Math.round(Math.sin(p * Math.PI * 8) * 8);
+this.setState({ scrolled: st > 12, pose, rx, ry, walking: !reduce });
+clearTimeout(this._timer);
+this._timer = setTimeout(() => this.setState({ walking: false }), 220);
+}
+renderVals() {
+const s = this.state;
+const says = {
+wave: "Hi, I'm Loop. Let's grow your brand.",
+walk: 'Strategy first, always.',
+point: 'Pick a service that fits.',
+think: 'Five steps, no guesswork.',
+pointdown: 'Ready? Start here.'
+};
+const findVideo = (e) => {
+const box = e.currentTarget.closest('[data-reel]');
+return box ? box.querySelector('video') : null;
+};
+return {
+navClass: s.scrolled ? 'scrolled' : '',
+menuOpen: s.menuOpen,
+menuClosed: !s.menuOpen,
+toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+closeMenu: () => this.setState({ menuOpen: false }),
+paused: s.paused,
+playing: !s.paused,
+muted: s.muted,
+soundOn: !s.muted,
+togglePlay: (e) => {
+const v = findVideo(e);
+if (!v) return;
+if (v.paused) { v.play(); this.setState({ paused: false }); }
+else { v.pause(); this.setState({ paused: true }); }
+},
+toggleSound: (e) => {
+const v = findVideo(e);
+if (!v) return;
+v.muted = !v.muted;
+this.setState({ muted: v.muted });
+},
+heroMove: (e) => {
+const r = e.currentTarget.getBoundingClientRect();
+const x = (e.clientX - r.left) / r.width - 0.5;
+const y = (e.clientY - r.top) / r.height - 0.5;
+e.currentTarget.querySelectorAll('.par').forEach((n) => {
+n.style.setProperty('--mx', String(x.toFixed(3)));
+n.style.setProperty('--my', String(y.toFixed(3)));
+});
+},
+heroLeave: (e) => {
+e.currentTarget.querySelectorAll('.par').forEach((n) => {
+n.style.setProperty('--mx', '0');
+n.style.setProperty('--my', '0');
+});
+},
+magnet: (e) => {
+const r = e.currentTarget.getBoundingClientRect();
+const x = (e.clientX - r.left - r.width / 2) * 0.18;
+const y = (e.clientY - r.top - r.height / 2) * 0.3;
+e.currentTarget.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+},
+magnetOut: (e) => { e.currentTarget.style.transform = ''; },
+robot: {
+x: s.rx,
+y: s.ry,
+cls: 'pose-' + s.pose + (s.walking ? ' walking' : ''),
+say: says[s.pose]
+},
+index: [
+{ num: '01', name: 'Content Marketing', category: 'Digital Marketing' },
+{ num: '02', name: 'Social Media Marketing', category: 'Digital Marketing' },
+{ num: '03', name: 'Google, Meta & LinkedIn Ads', category: 'Paid Advertising' },
+{ num: '04', name: 'Search Engine Optimization', category: 'SEO' },
+{ num: '05', name: 'Video Editing & Reels', category: 'Video & Content' },
+{ num: '06', name: 'Brand Identity & Branding', category: 'Design & Branding' }
+]
+};
+}
+}
+</script>
+
+
+</body></html>
